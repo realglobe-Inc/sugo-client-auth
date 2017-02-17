@@ -1,6 +1,6 @@
 {
   "name": "sugo-client-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authorize sugo-client",
   "main": "lib",
   "browser": "shim/browser",
