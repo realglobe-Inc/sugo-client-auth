@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Authorize sugo-client",
   "main": "lib",
+  "browser": "shim/browser",
   "scripts": {
     "test": "node ./ci/test.js",
     "prepare": "node ./ci/build.js && node ./ci/shim.js"
