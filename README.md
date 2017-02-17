@@ -74,12 +74,41 @@ Usage
 ```javascript
 'use strict'
 
-const sugoClientAuth = require('sugo-client-auth')
+const co = require('co')
+const { authorize } = require('sugo-client-auth')
+const sgSocketClient = require('sg-socket-client')
+
+co(function * () {
+  let socket = sgSocketClient('http://localhost:3000')
+  yield socket.waitToConnect()
+  yield authorize(socket, {
+    token: 'mytoken'
+  })
+  /* ... */
+  socket.disconnect()
+  yield socket.waitToDisconnect()
+}).catch((err) => console.error(err))
 
 ```
 
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
+
+<!-- Section from "doc/guides/03.Functions.md.hbs" Start -->
+
+<a name="section-doc-guides-03-functions-md"></a>
+
+Functions
+---------
+
+Available functions
+
+| Signature | Description |
+| ---- | ----------- |
+| `authorize(socket, auth) -> Promise` | Authorize socket |
+
+
+<!-- Section from "doc/guides/03.Functions.md.hbs" End -->
 
 
 <!-- Sections Start -->

@@ -1,0 +1,53 @@
+{
+  "name": "sugo-client-auth",
+  "version": "1.0.0",
+  "description": "Authorize sugo-client",
+  "main": "lib",
+  "scripts": {
+    "test": "node ./ci/test.js",
+    "prepare": "node ./ci/build.js && node ./ci/shim.js"
+  },
+  "repository": "realglobe-Inc/sugo-client-auth",
+  "keywords": [
+    "SUGOS"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinish@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/sugo-client-auth/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/sugo-client-auth#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "sg-socket-constants": "^1.3.14"
+  },
+  "devDependencies": {
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
+    "aglob": "^2.0.1",
+    "amocha": "^2.0.0",
+    "ape-doc": "^2.0.4",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.4",
+    "ape-reporting": "^3.0.2",
+    "ape-tasking": "^4.0.9",
+    "ape-tmpl": "^5.0.20",
+    "ape-updating": "^4.1.0",
+    "aport": "^1.0.0",
+    "asleep": "^1.0.3",
+    "coz": "^6.0.20",
+    "injectmock": "^2.0.0",
+    "sg-socket": "^1.0.15",
+    "sg-socket-client": "^1.5.0",
+    "socketio-auth": "^0.1.0",
+    "sugos-travis": "^2.0.7"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  }
+}
