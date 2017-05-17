@@ -1,6 +1,6 @@
 {
   "name": "sugo-client-auth",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Authorize sugo-client",
   "main": "lib",
   "browser": "shim/browser",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/realglobe-Inc/sugo-client-auth#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "sg-socket-constants": "^1.3.14"
+    "sg-socket-constants": "^1.6.2"
   },
   "devDependencies": {
     "ababel": "^2.0.1",
@@ -37,13 +37,13 @@
     "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.9",
     "ape-tmpl": "^5.0.20",
-    "ape-updating": "^4.1.0",
+    "ape-updating": "^4.1.1",
     "aport": "^1.0.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.20",
     "injectmock": "^2.0.0",
-    "sg-socket": "^1.0.15",
-    "sg-socket-client": "^1.5.0",
+    "sg-socket": "^2.0.1",
+    "sg-socket-client": "^2.0.1",
     "socketio-auth": "^0.1.0",
     "sugos-travis": "^2.0.7"
   },
